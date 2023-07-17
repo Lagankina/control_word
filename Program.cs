@@ -34,5 +34,35 @@ void PrintArray(string[] myArray)
         Console.Write("[" + myArray[i] + "]");
     }
 }
+string[] trim(string[] array)
+{
+    int resultCount = 0;
+    for(int index = 0; index < array.Length; index++)
+    {
+        if(array[index].Length <= 3)
+        {
+            resultCount++;
+        }
+    }
+    
+    string[] resultArray = new string[resultCount];
+    resultCount = 0;
+    for(int index = 0; index < array.Length; index++)
+    {
+        if(array[index].Length <= 3)
+        {
+            resultArray[resultCount++] = array[index];
+        }
+    } 
+    return resultArray;
+}
+
+
+
+
+
+
+
+
 
 
