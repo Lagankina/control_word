@@ -1,0 +1,15 @@
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/obj/Debug/net7.0/control_word.csproj.AssemblyReference.cache
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/obj/Debug/net7.0/control_word.GeneratedMSBuildEditorConfig.editorconfig
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/obj/Debug/net7.0/control_word.AssemblyInfoInputs.cache
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/obj/Debug/net7.0/control_word.AssemblyInfo.cs
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/obj/Debug/net7.0/control_word.csproj.CoreCompileInputs.cache
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/bin/Debug/net7.0/control_word
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/bin/Debug/net7.0/control_word.deps.json
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/bin/Debug/net7.0/control_word.runtimeconfig.json
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/bin/Debug/net7.0/control_word.dll
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/bin/Debug/net7.0/control_word.pdb
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/obj/Debug/net7.0/control_word.dll
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/obj/Debug/net7.0/refint/control_word.dll
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/obj/Debug/net7.0/control_word.pdb
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/obj/Debug/net7.0/control_word.genruntimeconfig.cache
+/home/adel/Рабочий стол/GeekBrains/C#/control_word/obj/Debug/net7.0/ref/control_word.dll
