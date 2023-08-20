@@ -3,58 +3,58 @@
 // Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами. -->
 
-Console.Write("Введите длину массива: "); 
-int len = int.Parse(Console.ReadLine());
-string[] myArray = new string[len];
+Console.Write("Введите длину массива: "); //Просим пользователя ввести длину массива
+int len = int.Parse(Console.ReadLine());  //Принимаем ввод от пользователя в виде целых чисел
+string[] myArray = new string[len];       //Создаем новый массив длинной, указанной пользователем
 
-GetEllementArray(myArray);
-Console.WriteLine("Исходный массив: ");
-PrintArray(myArray);
-Console.WriteLine();
+GetEllementArray(myArray);                //Функция, внутри которой массив
+Console.WriteLine("Исходный массив: ");   //Выводим исходный массив 
+PrintArray(myArray);                      //Функция печати,внутри которой исходный массив
+Console.WriteLine();                      //Отображается пустая строчка в пользовательском окне для разделения данных
 
-string[] resultArray = trim(myArray);
+string[] resultArray = trim(myArray);     // ДОбавляем в результирующий массив функцию для вычисления количества элементов
 
-Сonsole.WriteLine("Результирующий массив: ");
-PrintArray(resultArray);
-Console.WriteLine();
+Console.WriteLine("Результирующий массив: "); // Выводим результирующий массив на экран пользователя
+PrintArray(resultArray);                      // Функция печати,внутри которой результирующий массив 
+Console.WriteLine();                          //Отображается пустая строчка в пользовательском окне для разделения данных
 
-void GetEllementArray(string[] myArray)
+void GetEllementArray(string[] myArray)       //Создаем функцию (Метод), в которой результирующий массив
 {
-    for (int i = 0; i < myArray.Length; i++)
+    for (int i = 0; i < myArray.Length; i++)  // Пробегаемся по этому массиву внутри функции
     {
-        Console.Write("Введите " + (i + 1) + " элемент массива: ");
-        myArray[i] = Console.ReadLine();
+        Console.Write("Введите " + (i + 1) + " элемент массива: "); // Просим пользователя ввести элементы исходного массива
+        myArray[i] = Console.ReadLine();                            //Записываем эти элементы в исходный массив
     }
 }
 
-void PrintArray(string[] myArray)
+void PrintArray(string[] myArray)              // Создаем функцию (Метод) для печати элементов массива
 {
-    for(int i = 0; i < myArray.Length; i++)
+    for(int i = 0; i < myArray.Length; i++)    //Пробегаемся по этому массиву внутри функции
     {
-        Console.Write("[" + myArray[i] + "]");
+        Console.Write("[" + myArray[i] + "]"); // Выводим на экран пользователя элементы массива
     }
 }
-string[] trim(string[] array)
+string[] trim(string[] array)                  // Создаем функцию (Метод) для вычисления количества элементов
 {
-    int resultCount = 0;
-    for(int index = 0; index < array.Length; index++)
+    int resultCount = 0;                       // Создаем временную переменную внутри массива для записи элементов
+    for(int index = 0; index < array.Length; index++) ////Пробегаемся по исходному массиву внутри функции
     {
-        if(array[index].Length <= 3)
+        if(array[index].Length <= 3)           //Условие для элементов массива, длина которых меньше, либо равна 3 символам
         {
-            resultCount++;
+            resultCount++;                     //если длина меньше, либо равна 3 символам, записываем во временную переменную
         }
     }
     
-    string[] resultArray = new string[resultCount];
-    resultCount = 0;
-    for(int index = 0; index < array.Length; index++)
+    string[] resultArray = new string[resultCount]; //  Создаём новый массив нужного размера 
+    resultCount = 0;                                // Создаем временную переменную внутри массива для записи элементов
+    for(int index = 0; index < array.Length; index++)  //Пробегаемся по исходному массиву внутри функции
     {
-        if(array[index].Length <= 3)
+        if(array[index].Length <= 3) //Условие для элементов массива, длина которых меньше, либо равна 3 символам
         {
-            resultArray[resultCount++] = array[index];
+            resultArray[resultCount++] = array[index]; //Заполняем массив согласно условию задачи
         }
     } 
-    return resultArray;
+    return resultArray; //выводим новый массив 
 }
 
 
